@@ -2,8 +2,8 @@
 require File.expand_path('../lib/motion-settings/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Jonathan Silverman"]
-  gem.email         = ["jsilver@mdx.la"]
+  gem.authors       = ["Jonathan Silverman", "Aaron Hurley"]
+  gem.email         = ["jsilver@mdx.la", "aaron@showtimefu.com"]
   gem.description   = %q{A convenience wrapper to allow RubyMotion apps easy access to reading, writing, and persisting values via NSUserDefaults.}
   gem.summary       = %q{RubyMotion Settings Library}
   gem.homepage      = "https://github.com/jsilverMDX/RubyMotion-UserSettings"

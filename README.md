@@ -6,27 +6,11 @@ An extension to allow RubyMotion apps easy access to reading, writing, and persi
 Installation
 ------------
 
-Copy the `rmsettable.rb` and `rmsettings.rb` into your `/app` directory. As there isn't yet a convention for where to put these sorts of files, I'd recommend adding a `/app/lib/rm_settings` directory.
+Put this in your Gemfile:
 
-    /project
-      /app
-        /lib
-          /rm_settings
-             rmsettable.rb
-             rmsettings.rb
+gem 'motion-settings'
 
-Setup
------
-
-Given the way RubyMotion compiles files, you will probably need to add the RMSettings files to your `Rakefile` files_dependencies options.
-
-```ruby
-Motion::Project::App.setup do |app|
-  app.files_dependencies  'app/app_delegate.rb' => 'app/lib/rm_settings/rmsettable.rb',
-                          'app/lib/rm_settings/rmsettable.rb' => 'app/lib/rm_settings/rmsettings.rb'
-
-  ...
-```
+Done!
 
 Usage
 -----
